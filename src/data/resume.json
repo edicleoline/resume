@@ -1,0 +1,398 @@
+{
+    "me": {
+        "name": "Edicleo Oliveira",
+        "email": "edicleo@proton.me",
+        "about": "app.resume.general.about_me",
+        "pic": {
+            "url": "https://d4zjpv0aa4kr2.cloudfront.net/uploads/candidate/image/357118/2d790907-87d9-49ef-9fe2-26f9f5cf752e.jpg"
+        },
+        "whatsapp": {
+            "number": "+5511959912829"
+        },
+        "github": {
+            "link": "https://github.com/edicleoline"
+        }
+    },
+    "contact": {
+        "whatsapp": {
+            "message": "app.resume.contact.whatsapp.message"
+        },
+        "email": {
+            "subject": "app.resume.contact.email.subject",
+            "body": "app.resume.contact.email.body"
+        }
+    },
+    "share": {
+        "message": "app.resume.share.message",
+        "email": {
+            "subject": "app.resume.share.email.subject"
+        },
+        "sms": {
+            "message": "app.resume.share.sms.message"
+        }
+    },
+    "general": {
+        "caption": "fullstack_developer",
+        "skills": [
+            "solid",
+            "design_patters"
+        ],
+        "overlines": [
+            "app.resume.my_location.summary",
+            "start_immediately",
+            "job_contract_type",
+            "app.resume.general.working_model_overline"
+        ]             
+    },
+    "expertise": {
+        "skills": {
+            "header": {
+                "timeline": ["1-3", "4-6", "7-10", "11+"]
+            },
+            "graph": {
+                "map": [
+                    { "time": 8, "value": 67 }
+                ]
+            },
+            "items": [
+                { 
+                    "title": "app.resume.env_desktop", 
+                    "time": 17
+                },
+                { 
+                    "title": "app.resume.env_mobile", 
+                    "time": 8,
+                    "progress": {
+                        "variant": "buffer"
+                    }
+                },   
+                { 
+                    "title": "app.resume.env_web", 
+                    "time": 13 
+                }
+            ]
+        }        
+    },
+    "experiences": {
+        "items": [            
+            {
+                "position": {
+                    "title": "app.resume.senior_developer_analyst"
+                },
+                "company": {
+                    "name": "Sofashion Consultoria"
+                },
+                "start_at": "2015-03-01",
+                "end_at": "2022-12-01",
+                "description": "app.resume.work_experience.sofashion.description",
+                "skills": [
+                    "csharp",
+                    "php",
+                    "mysql",
+                    "sql",
+                    "mvc",
+                    "restful",
+                    "css3",
+                    "scss",
+                    "scrum",
+                    "nosql",
+                    "nodejs",
+                    "kotlin",
+                    "python",
+                    "reactjs",
+                    "soa",
+                    "aws",
+                    "magento",
+                    "mongo",
+                    "redux",
+                    "redis",
+                    "es6",
+                    "django",
+                    "java",
+                    "devops",
+                    "maven",
+                    "docker",
+                    "html5",
+                    "laravel",
+                    "git",
+                    "jetpackcompose",
+                    "sqlite",
+                    "sqlserver",                    
+                    "cplusplus",                      
+                    "dynamo", 
+                    "kubernets",  
+                    "bash"
+                ]
+            },
+            {
+                "position": {
+                    "title": "app.resume.full_developer_analyst"
+                },
+                "company": {
+                    "name": "Stefanini Consultoria e Assessoria em Informática"
+                },
+                "start_at": "2013-02-01",
+                "end_at": "2014-12-01",
+                "description": "app.resume.work_experience.stefanini.description",
+                "skills": [
+                    "csharp", 
+                    "asp",
+                    "aspnet",
+                    "c",
+                    "oracledb",
+                    "plsql",
+                    "sql",
+                    "mvc",
+                    "restful",
+                    "css3",
+                    "scss",
+                    "scrum",
+                    "angular",
+                    "jquery",
+                    "soa",
+                    "net",
+                    "windowsforms",
+                    "javascript",
+                    "cplusplus",
+                    "team"
+                ]
+            },
+            {
+                "position": {
+                    "title": "app.resume.programmer"
+                },
+                "company": {
+                    "name": "Ambidados Consultoria em Meio Ambiente"
+                },
+                "start_at": "2013-10-01",
+                "end_at": "2011-12-01",
+                "description": "app.resume.work_experience.ambidados.description",
+                "skills": [
+                    "csharp",
+                    "c",
+                    "cplusplus",
+                    "asp",
+                    "aspnet",
+                    "visualbasic",
+                    "visualbasicnet",
+                    "java",
+                    "python",
+                    "matlab",
+                    "javascript",
+                    "oracledb",
+                    "plsql",
+                    "mvc",
+                    "net",
+                    "windowsforms",
+                    "wcf",
+                    "backend",
+                    "frontend",
+                    "visualbasicnet",
+                    "cobol"
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "items": [
+            {
+                "title": "app.resume.project.proxy.title",
+                "start_at": "2023-02-01",
+                "end_at": null,
+                "description": "app.resume.project.proxy.description",
+                "github": {
+                    "link": "https://github.com/edicleoline/proxy"
+                },
+                "skills": [
+                    "python",
+                    "typescript",
+                    "nodejs", 
+                    "reactjs", 
+                    "fullstack", 
+                    "flask", 
+                    "socketio",
+                    "sql",
+                    "sqlite",
+                    "mui",
+                    "debian",
+                    "css3",
+                    "scss",
+                    "html5",
+                    "bash",
+                    "web",
+                    "javascript"
+                ]
+            },
+            {
+                "title": "app.resume.project.truecaller.title",
+                "start_at": "2022-11-01",
+                "end_at": null,
+                "description": "app.resume.project.truecaller.description",
+                "github": {
+                    "link": "https://github.com/edicleoline/berners-truecaller"
+                },
+                "skills": [
+                    "python", 
+                    "selenium",
+                    "typescript", 
+                    "nodejs", 
+                    "fullstack", 
+                    "php",
+                    "laravel",
+                    "sql",
+                    "sqlite",
+                    "mysql",
+                    "aws",
+                    "jetpackcompose",
+                    "kotlin",
+                    "bash",
+                    "tdd",
+                    "java",
+                    "mobile"
+                ]
+            }
+        ]
+    },
+    "education": {
+        "items": [
+            {
+                "title": "app.resume.education.uerj.title",
+                "label": "app.resume.education.uerj.name",
+                "overline": "app.resume.education.uerj.course",
+                "start_at": "2012-03-01",
+                "end_at": "2016-01-01"
+            }
+        ]
+    },
+    "training": {
+        "items": [
+            {
+                "title": "app.resume.training.pentest.title",
+                "label": "HackerSec",
+                "start_at": "2017-10-01",
+                "end_at": "2018-07-01",
+                "icon": "SecurityIcon",
+                "description": "app.resume.training.pentest.description"
+            },
+            {
+                "title": "app.resume.training.database.title",
+                "label": "FAETEC",
+                "start_at": "2006-01-01",
+                "end_at": "2006-10-01",
+                "icon": "StorageIcon",
+                "description": "app.resume.training.database.description"
+            },
+            {
+                "title": "app.resume.training.java.title",
+                "label": "FAETEC",
+                "start_at": "2005-03-01",
+                "end_at": "2005-11-01",
+                "icon": "DataObjectIcon",
+                "description": "app.resume.training.java.description"
+            },
+            {
+                "title": "app.resume.training.programming.title",
+                "label": "FAETEC",
+                "start_at": "2004-02-01",
+                "end_at": "2004-12-01",
+                "icon": "CodeIcon",
+                "description": "app.resume.training.programming.description"
+            }
+        ]
+    },
+    "skills": {
+        "header": {
+            "timeline": ["0-1", "2-3", "4-6", "7+"]
+        },
+        "graph": {
+            "map": [
+                { "time": 1, "value": 35 },
+                { "time": 2, "value": 38 },
+                { "time": 3, "value": 41 },
+                { "time": 4, "value": 65 },
+                { "time": 5, "value": 68 },
+                { "time": 6, "value": 74 },
+                { "time": 7, "value": 92 },
+                { "time": 8, "value": 100 }
+            ]
+        },
+        "items": [
+            { "title": "netcore", "graph": { "time": 5 }, "progressVariant": "buffer" },
+            { "title": "net", "graph": { "time": 13 } },
+            { "title": "aws", "graph": { "time": 8 } },
+            { "title": "angular", "graph": { "time": 5 } },
+            { "title": "asp", "graph": { "time": 11 } },
+            { "title": "c", "graph": { "time": 13 } },
+            { "title": "csharp", "graph": { "time": 12 } },
+            { "title": "cobol", "graph": { "time": 2 } },
+            { "title": "java", "graph": { "time": 9 } },
+            { "title": "php", "graph": { "time": 10 } },
+            { "title": "delphi", "graph": { "time": 2 } },
+            { "title": "javascript", "graph": { "time": 13 } },
+            { "title": "typescript", "graph": { "time": 5 }, "progressVariant": "buffer" },
+            { "title": "aspnet", "graph": { "time": 8 } },
+            { "title": "visualbasic", "graph": { "time": 6 } },
+            { "title": "visualbasicnet", "graph": { "time": 4 } },
+            { "title": "python", "graph": { "time": 10 } },
+            { "title": "matlab", "graph": { "time": 1 } },
+            { "title": "sql", "graph": { "time": 14 } },
+            { "title": "plsql", "graph": { "time": 2 } },
+            { "title": "oracledb", "graph": { "time": 5 } },
+            { "title": "postgresql", "graph": { "time": 6 } },
+            { "title": "mvc", "graph": { "time": 8 } },
+            { "title": "flask", "graph": { "time": 6 } },
+            { "title": "socketio", "graph": { "time": 5 }, "progressVariant": "buffer" },
+            { "title": "reactjs", "graph": { "time": 6 }, "progressVariant": "buffer" },
+            { "title": "restful", "graph": { "time": 9 } },
+            { "title": "nodejs", "graph": { "time": 6 }, "progressVariant": "buffer" },
+            { "title": "debian", "graph": { "time": 10 } },
+            { "title": "sqlite", "graph": { "time": 8 } },
+            { "title": "mui", "graph": { "time": 4 } },
+            { "title": "css3", "graph": { "time": 9 } },
+            { "title": "scss", "graph": { "time": 12 } },
+            { "title": "html5", "graph": { "time": 9 } },
+            { "title": "laravel", "graph": { "time": 5 } },
+            { "title": "git", "graph": { "time": 6 } },
+            { "title": "vue", "graph": { "time": 2 } },
+            { "title": "kubernets", "graph": { "time": 2 } },
+            { "title": "docker", "graph": { "time": 2 } },
+            { "title": "sqlserver", "graph": { "time": 6 } },
+            { "title": "soa", "graph": { "time": 9 } },
+            { "title": "maven", "graph": { "time": 4 } },
+            { "title": "springmvc", "graph": { "time": 2 } },
+            { "title": "bootstrap", "graph": { "time": 5 } },
+            { "title": "redux", "graph": { "time": 6 }, "progressVariant": "buffer" },
+            { "title": "scrum", "graph": { "time": 8 } },
+            { "title": "devops", "graph": { "time": 4 }, "progressVariant": "buffer" },
+            { "title": "wcf", "graph": { "time": 5 } },
+            { "title": "cicd", "graph": { "time": 5 }, "progressVariant": "buffer" },
+            { "title": "jquery", "graph": { "time": 10 } },
+            { "title": "kotlin", "graph": { "time": 5 }, "progressVariant": "buffer" },
+            { "title": "windowsforms", "graph": { "time": 8 } },
+            { "title": "r", "graph": { "time": 2 } },
+            { "title": "es6", "graph": { "time": 10 } },
+            { "title": "django", "graph": { "time": 2 } },
+            { "title": "flutter", "graph": { "time": 2 }, "progressVariant": "buffer" },
+            { "title": "mongo", "graph": { "time": 5 } },
+            { "title": "dynamo", "graph": { "time": 4 } },
+            { "title": "redis", "graph": { "time": 5 } },
+            { "title": "bash", "graph": { "time": 10 } },
+            { "title": "tdd", "graph": { "time": 10 } },
+            { "title": "selenium", "graph": { "time": 5 } },
+            { "title": "ionic", "graph": { "time": 5 } },
+            { "title": "next", "graph": { "time": 4 }, "progressVariant": "buffer" },
+            { "title": "express", "graph": { "time": 4 } },
+            { "title": "jetpackcompose", "graph": { "time": 5 }, "progressVariant": "buffer" },
+            { "title": "cplusplus", "graph": { "time": 12 } },
+            { "title": "nosql", "graph": { "time": 5 } },
+            { "title": "serverless", "graph": { "time": 6 }, "progressVariant": "buffer" },
+            { "title": "springboot", "graph": { "time": 4 } },
+            { "title": "solid", "graph": { "time": 8 } },
+            { "title": "eslint", "graph": { "time": 7 } },
+            { "title": "mocha", "graph": { "time": 2 } },
+            { "title": "graphql", "graph": { "time": 5 } },
+            { "title": "figma", "graph": { "time": 3 } },
+            { "title": "websocket", "graph": { "time": 8 } }
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "site": {
+        "url": "https://edicleo.dev",
+        "i18n": {
+            "langs": [
+                { "label": "English", "locale": "en" },
+                { "label": "Português", "locale": "pt" }
+            ],
+            "default": { "label": "Português", "locale": "pt" }
+        }
+    }
+}
