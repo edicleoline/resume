@@ -1,7 +1,8 @@
 import * as types from './actions/types';
+import { DEFAULT_LOCALE } from './../i18n/index';
 
 export const initialState = {
-    lang: null
+    lang: DEFAULT_LOCALE
 };
 
 const siteReducer = (state = initialState, action) => {

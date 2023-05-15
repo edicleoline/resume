@@ -21,14 +21,14 @@ const App = () => {
     const customization = useSelector((state) => state.customization);    
     const site = useSelector((state) => state.site);
 
-    useEffect(() => {
-        if (!site.lang) {
-            moment.locale(DEFAULT_LOCALE);
-            store.dispatch(setLang(DEFAULT_LOCALE));            
-        } else {
-            moment.locale(site.lang);
-        }
-    }, [site]);
+    // useEffect(() => {
+    //     if (!site.lang) {
+    //         moment.locale(DEFAULT_LOCALE);
+    //         store.dispatch(setLang(DEFAULT_LOCALE));            
+    //     } else {
+    //         moment.locale(site.lang);
+    //     }
+    // }, [site]);
     
     return (
         <IntlProvider locale={site.lang} messages={messages[site.lang]}>
