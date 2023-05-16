@@ -139,6 +139,6 @@
     "app.resume.share.message": "Take a look at this resume. His name is Edicleo. He is a developer, senior level, is 34 years old and lives in Barueri, SP. It is available for immediate start. https://edicleo.dev",
     "app.resume.share.email.subject": "Hello! Take a look at this resume",
     "app.resume.share.sms.message": "Join this resume: https://edicleo.dev",
-    "app.resume.static_file.url": "download/Edicleo_Oliveira_Full_Stack_Resume.pdf",
+    "app.resume.static_file.url": "https://raw.githubusercontent.com/edicleoline/resume/main/public/download/Edicleo_Oliveira_Full_Stack_Resume.pdf",
     "app.site.resume.title": "Edicleo Oliveira - Full Stack Developer"
 }
