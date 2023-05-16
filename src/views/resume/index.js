@@ -1,5 +1,4 @@
 import * as React from 'react';
-import ReactDOMServer from "react-dom/server";
 import { useEffect, useState, useRef } from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
@@ -11,8 +10,6 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import Chip from '@mui/material/Chip';
 import Divider from '@mui/material/Divider';
-import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
-import BadgeIcon from '@mui/icons-material/Badge';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import IconButton from '@mui/material/IconButton';
@@ -21,9 +18,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import LinearProgress from '@mui/material/LinearProgress';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
-import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
-import SearchIcon from '@mui/icons-material/Search';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SchoolIcon from '@mui/icons-material/School';
 import SecurityIcon from '@mui/icons-material/Security';
 import DataObjectIcon from '@mui/icons-material/DataObject';
@@ -39,10 +33,6 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ListItem from '@mui/material/ListItem';
-import { FixedSizeList } from 'react-window';
-import RouterIcon from '@mui/icons-material/Router';
 import { useSpring, a, config } from 'react-spring';
 import { useDrag } from 'react-use-gesture';
 import Backdrop from '@mui/material/Backdrop';
@@ -62,7 +52,8 @@ import { useSelector } from 'react-redux';
 import data from './../../data/resume.json';
 import _settings from './../../data/settings.json';
 import moment from 'moment';
-// import Loadable from 'react-loadable';
+
+//Desculpe, SOLID
 
 const ProfileRowContainer = styled(Grid)(({ theme }) => ({
     ...theme.typography.body2,
@@ -112,7 +103,7 @@ const MyH7 = styled(Typography)(({ theme }) => ({
 }));
 
 const transformGraphSkill = ({ map, time }) => {
-    const p = map.find((x) => x.time == time); //solução porca, eu sei
+    const p = map.find((x) => x.time == time);
 
     return {
         label: {
@@ -120,13 +111,12 @@ const transformGraphSkill = ({ map, time }) => {
             values: { years: time }
         },
         progress: {
-            // value: (100 * time) / max
             value: p ? p.value : 100
         }
     };
 };
 
-//outra porcaria
+//Solução porca, eu sei
 const Icons = { 
     'StorageIcon': StorageIcon,
     'SecurityIcon': SecurityIcon,
@@ -451,9 +441,7 @@ const TranslationActionSheet = () => {
                                     <Grid item>
                                         <ListItemText>{lang.label}</ListItemText>
                                     </Grid>
-                                </Grid>
-                                
-                                
+                                </Grid>                                                                
                             </ActionSheetMenuItem>
                         ))}
                     </MenuList>
@@ -575,7 +563,7 @@ const SectionGeneral = ({ mobile }) => {
                         <Grid
                             item 
                             sx={
-                                !mobile ? { mr: 3 } : { flexBasis: '100%' }
+                                mobile ? { flexBasis: '100%' } : { mr: 3 }
                             }
                         >
                             <Avatar
@@ -1652,14 +1640,14 @@ const Footer = () => {
                             </Grid>
                             <Grid item>
                                 <Link 
-                                    href="https://github.com/edicleoline/resume" 
+                                    href={_settings.site.resume.github.url}
                                     target="_blank"
                                     color="primary"
                                     sx={{
                                         fontSize: '12px',
                                     }}
                                 >
-                                    https://github.com/edicleoline/resume
+                                    {_settings.site.resume.github.url}
                                 </Link>
                             </Grid>
                         </Grid>    

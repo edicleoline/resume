@@ -7,6 +7,11 @@
                 { "label": "Português", "locale": "pt" }
             ],
             "default": { "label": "Português", "locale": "pt" }
+        },
+        "resume": {
+            "github": {
+                "url": "https://github.com/edicleoline/resume"
+            }
         }
     }
 }

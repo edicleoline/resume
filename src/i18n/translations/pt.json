@@ -136,9 +136,9 @@
     "app.resume.contact.whatsapp.message": "Fala, Ed! Blz? Vi seu currículo e tenho uma ótima oportunidade para você",
     "app.resume.contact.email.subject": "Que tal trabalhar conosco?",
     "app.resume.contact.email.body": "Fala, Ed! Blz? Vi seu currículo e tenho uma ótima oportunidade para você",
-    "app.resume.share.message": "Dê uma olhadinha neste currículo. O nome dele é Edicleo. É desenvolvedor, nível sênior, tem 34 anos e mora em Barueri, SP. Está disponível para início imediato. CLT ou PJ. Presencial, híbrido ou remoto. https://globo.com",
+    "app.resume.share.message": "Dê uma olhadinha neste currículo. O nome dele é Edicleo. É desenvolvedor, nível sênior, tem 34 anos e mora em Barueri, SP. Está disponível para início imediato. CLT ou PJ. Presencial, híbrido ou remoto. https://edicleo.dev",
     "app.resume.share.email.subject": "Olá! Dê uma olhadinha neste currículo",
-    "app.resume.share.sms.message": "Se liga neste curriculo: https://globo.com",
-    "app.resume.static_file.url": "https://google.com",
+    "app.resume.share.sms.message": "Se liga neste curriculo: https://edicleo.dev",
+    "app.resume.static_file.url": "download/Edicleo_Oliveira_Full_Stack_Curriculo.pdf",
     "app.site.resume.title": "Edicleo Oliveira - Desenvolvedor Full Stack"
 }
