@@ -3,8 +3,9 @@ import { lazy } from 'react';
 import MainLayout from './../layout/MainLayout';
 import Loadable from './../ui-component/Loadable';
 
-// const Resume = Loadable(lazy(() => import('./../views/resume')));
 import Resume from './../views/resume';
+const _Resume = Loadable(lazy(() => import('./../views/resume')));
+
 
 const MainRoutes = {
     path: '/',
@@ -12,7 +13,7 @@ const MainRoutes = {
     children: [
         {
             path: '/',
-            element: <Resume />
+            element: <_Resume />
         }        
     ]
 };
