@@ -451,6 +451,33 @@ const TranslationActionSheet = () => {
     )
 };
 
+const ProfileBottom = ({ overlines, about }) => {
+    return (
+        <>
+            <Grid item>
+                <Grid container direction="row">
+                    {overlines.map((overline, index) => (
+                        <Grid key={index} item sx={{ mr: 1.2 }}>
+                            <Grid container direction="row">
+                                <Grid item>
+                                    <Typography variant="overline" sx={{ lineHeight: 'initial' }}>
+                                        <FormattedMessage id={overline} />
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    ))}
+                </Grid>              
+            </Grid>
+            <Grid item>
+                <Typography variant="body2" sx={{ mt: 1 }}>
+                    <FormattedMessage id={about} />
+                </Typography>
+            </Grid>
+        </>
+    );
+};
+
 const SectionGeneral = ({ mobile }) => {
     const _general = data?.general;
     const [general] = useState(_general);
@@ -562,27 +589,24 @@ const SectionGeneral = ({ mobile }) => {
                     >
                         <Grid
                             item 
-                            sx={
-                                mobile ? { flexBasis: '100%' } : { mr: 3 }
-                            }
+                            sx={{
+                                mr: mobile ? 2 : 3
+                            }}
                         >
                             <Avatar
                                 alt={data.me.name}
                                 src={data.me.pic.url}
                                 sx={[
                                     { 
-                                        width: 120, 
-                                        height: 120, 
+                                        width: mobile ? 64 : 120, 
+                                        height: mobile ? 64 : 120, 
                                         margin: 'auto', 
                                         marginBottom: '16px', 
                                         position: 'relative', 
-                                        border: mobile ? 'solid 5px #F0F1F2' : 'none 0',
-                                        boxShadow: mobile ? '0px 1px 1px rgba(0,0,0,.15)' : 'none',
                                     },
-                                    mobile && { top: '-70px', marginBottom: '-60px' }
                                 ]}
                             />
-                        </Grid>
+                        </Grid>                        
                         <Grid item sx={{ flex: 1 }}>
                             <Grid container direction="column">
                                 <Grid item>
@@ -614,41 +638,54 @@ const SectionGeneral = ({ mobile }) => {
                                         ))}
                                     </Stack>
                                 </Grid>
-                                <Grid item sx={{ height: '40px' }}>
-                                    <Divider 
-                                        sx={{ 
-                                            mt: 3, 
-                                            mb: 3, 
-                                            position: 'absolute', 
-                                            width: mobile ? '100%' : 'calc(100% - 208px)',
-                                            left: mobile ? '0' : 'auto'
-                                        }}
-                                    />
-                                </Grid>
-                                <Grid item>
-                                    <Grid container direction="row">
-                                        {general.overlines.map((overline, index) => (
-                                            <Grid key={index} item sx={{ mr: 1.2 }}>
-                                                <Grid container direction="row">
-                                                    <Grid item>
-                                                        <Typography variant="overline" sx={{ lineHeight: 'initial' }}>
-                                                            <FormattedMessage id={overline} />
-                                                        </Typography>
-                                                    </Grid>
-                                                </Grid>
-                                            </Grid>
-                                        ))}
-                                    </Grid>              
-                                </Grid>
-                                <Grid item>
-                                    <Typography variant="body2" sx={{ mt: 1 }}>
-                                        <FormattedMessage id={data.me.about} />
-                                    </Typography>
-                                </Grid>
+                                {!mobile && (
+                                    <>
+                                        <Grid item sx={{ height: '40px' }}>
+                                            <Divider 
+                                                sx={{ 
+                                                    mt: 3, 
+                                                    mb: 3, 
+                                                    position: 'absolute', 
+                                                    width: 'calc(100% - 208px)',
+                                                    left: 'auto'
+                                                }}
+                                            />
+                                        </Grid>
+                                        <ProfileBottom overlines={general.overlines} about={data.me.about} />                                        
+                                    </>
+                                )}
                             </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
+                {mobile && (
+                    <>
+                        <Grid item>
+                            <Grid item>
+                                <Divider 
+                                    sx={{ 
+                                        mt: 0, 
+                                        mb: 0, 
+                                        position: 'relative', 
+                                        width: '100%',
+                                        left: 0
+                                    }}
+                                />
+                            </Grid>
+                            <Grid
+                                container
+                                direction="column"
+                                sx={{
+                                    p: 2,
+                                    pt: 1,
+                                    pb: 1
+                                }}
+                            >
+                                <ProfileBottom overlines={general.overlines} about={data.me.about} /> 
+                            </Grid>
+                        </Grid>
+                    </>
+                )}                
                 <Grid 
                     item
                     sx={{ 
@@ -1674,7 +1711,7 @@ const Resume = () => {
             <Container 
                 maxWidth="lg"
                 sx={{ 
-                    pt: 5,
+                    pt: 0,
                     paddingLeft: '4px',
                     paddingRight: '4px'
                 }}
@@ -1682,7 +1719,7 @@ const Resume = () => {
                 <Grid 
                     container
                     direction="column"
-                    sx={{ paddingTop: mobile ? '30px' : '0' }}
+                    sx={{ paddingTop: mobile ? '10px' : '40px' }}
                 >
                     <ProfileRowContainer item>
                         <ProfileRowWrapper>
