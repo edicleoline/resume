@@ -50,7 +50,7 @@ import { store } from './../../store';
 import setLang from './../../store/actions/setLang';
 import { useSelector } from 'react-redux';
 import data from './../../data/resume.json';
-import _settings from './../../data/settings.json';
+import settings from './../../data/settings.json';
 import moment from 'moment';
 
 //Desculpe, SOLID
@@ -290,7 +290,7 @@ const ShareActionSheet = () => {
 
     const handleShareTelegramClick = () => {
         const text = new IntlMessageFormat(messages[site.lang][data.share.message], site.lang);
-        window.open(`https://telegram.me/share/url?url=${_settings.site.url}&text=${text.format()}`);
+        window.open(`https://telegram.me/share/url?url=${settings.site.url}&text=${text.format()}`);
     };
 
     const handleShareSmsClick = () => {
@@ -337,7 +337,7 @@ const ShareActionSheet = () => {
                             {data.me.name}
                         </Typography>
                         <Typography variant="body2" component="div" sx={{ mb: 0, mt: '-2px' }}>
-                            {_settings.site.url}
+                            {settings.site.url}
                         </Typography>
                     </Grid>
                 </Grid>
@@ -397,7 +397,7 @@ const ShareActionSheet = () => {
 };
 
 const TranslationActionSheet = () => {
-    const [langs, setLangs] = useState(_settings.site.i18n.langs);
+    const [langs, setLangs] = useState(settings.site.i18n.langs);
     const site = useSelector((state) => state.site);
 
     const [selectedLang, setSelectedLang] = useState(site.lang);
@@ -495,7 +495,7 @@ const SectionGeneral = ({ mobile }) => {
     const shareOpen = Boolean(shareAnchorEl);
     const [shareActionSheetOpen, setShareActionSheetOpen] = useState(false);
 
-    const [langs, setLangs] = useState(_settings.site.i18n.langs);
+    const [langs, setLangs] = useState(settings.site.i18n.langs);
     const [selectedLang, setSelectedLang] = useState(site.lang);
 
     const handleShareMenuClose = () => {
@@ -555,7 +555,7 @@ const SectionGeneral = ({ mobile }) => {
 
     const handleShareTelegramClick = () => {
         const text = new IntlMessageFormat(messages[site.lang][data.share.message], site.lang);
-        window.open(`https://telegram.me/share/url?url=${_settings.site.url}&text=${text.format()}`);
+        window.open(`https://telegram.me/share/url?url=${settings.site.url}&text=${text.format()}`);
         handleShareMenuClose();
     };
 
@@ -1677,14 +1677,14 @@ const Footer = () => {
                             </Grid>
                             <Grid item>
                                 <Link 
-                                    href={_settings.site.resume.github.url}
+                                    href={settings.site.resume.github.url}
                                     target="_blank"
                                     color="primary"
                                     sx={{
                                         fontSize: '12px',
                                     }}
                                 >
-                                    {_settings.site.resume.github.url}
+                                    {settings.site.resume.github.url}
                                 </Link>
                             </Grid>
                         </Grid>    
