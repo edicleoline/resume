@@ -121,7 +121,13 @@
                     "cplusplus",                      
                     "dynamo", 
                     "kubernets",  
-                    "bash"
+                    "bash",
+                    "rabbitmq",
+                    "gitflow",
+                    "postman",
+                    "elastic",
+                    "ddd",
+                    "uml"
                 ]
             },
             {
@@ -154,7 +160,11 @@
                     "windowsforms",
                     "javascript",
                     "cplusplus",
-                    "team"
+                    "team",
+                    "oauth",
+                    "jwt",
+                    "postman",
+                    "linq"
                 ]
             },
             {
@@ -188,7 +198,12 @@
                     "backend",
                     "frontend",
                     "visualbasicnet",
-                    "cobol"
+                    "cobol",
+                    "rabbitmq",
+                    "uml",
+                    "linq",
+                    "entityframework",
+                    "linq"
                 ]
             }
         ]
@@ -220,7 +235,7 @@
                     "html5",
                     "bash",
                     "web",
-                    "javascript"
+                    "javascript"                    
                 ]
             },
             {
@@ -248,7 +263,7 @@
                     "bash",
                     "tdd",
                     "java",
-                    "mobile"
+                    "mobile"                    
                 ]
             }
         ]
@@ -392,7 +407,18 @@
             { "title": "mocha", "graph": { "time": 2 } },
             { "title": "graphql", "graph": { "time": 5 } },
             { "title": "figma", "graph": { "time": 3 } },
-            { "title": "websocket", "graph": { "time": 8 } }
+            { "title": "websocket", "graph": { "time": 8 } },
+            { "title": "kanban", "graph": { "time": 3 } },
+            { "title": "uml", "graph": { "time": 10 } },
+            { "title": "entityframework", "graph": { "time": 9 } },
+            { "title": "oauth", "graph": { "time": 8 } },
+            { "title": "jwt", "graph": { "time": 8 } },
+            { "title": "ddd", "graph": { "time": 6 } },
+            { "title": "rabbitmq", "graph": { "time": 7 } },
+            { "title": "elastic", "graph": { "time": 3 } },
+            { "title": "postman", "graph": { "time": 6 } },
+            { "title": "gitflow", "graph": { "time": 3 } },
+            { "title": "linq", "graph": { "time": 6 } }
         ]
     }
 }
