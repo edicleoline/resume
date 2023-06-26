@@ -3,9 +3,13 @@ import { lazy } from 'react';
 import MainLayout from './../layout/MainLayout';
 import Loadable from './../ui-component/Loadable';
 
-import Resume from './../views/resume';
-const _Resume = Loadable(lazy(() => import('./../views/resume')));
-const _Congrats = Loadable(lazy(() => import('./../views/congrats')));
+const Latest = Loadable(lazy(() => import('./../views/latest')));
+const Posts = Loadable(lazy(() => import('./../views/posts')));
+const Post = Loadable(lazy(() => import('./../views/post')));
+
+const Resume = Loadable(lazy(() => import('./../views/resume')));
+
+// const _Congrats = Loadable(lazy(() => import('./../views/congrats')));
 
 
 const MainRoutes = {
@@ -13,13 +17,25 @@ const MainRoutes = {
     element: <MainLayout />,
     children: [
         {
-            path: '/',
-            element: <_Resume />
+            path: '/resume',
+            element: <Resume />
         },
         {
-            path: '/r/imagem',
-            element: <_Congrats />
-        }        
+            path: '/latest',
+            element: <Latest />
+        },
+        {
+            path: '/posts',
+            element: <Posts />
+        },
+        {
+            path: '/post',
+            element: <Post />
+        },
+        // {
+        //     path: '/r/imagem',
+        //     element: <_Congrats />
+        // }        
     ]
 };
 
